@@ -1,0 +1,31 @@
+h1 {
+    font-family: sans-serif;
+    padding-left: 25px;
+    color: saddlebrown;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 50px
+}
+
+.loading {
+    text-align: center;
+    font-size: 150px;
+    color: red;
+}
+
+body {
+    background-color: #c0c0c0;
+}
+
+.nCard {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+}

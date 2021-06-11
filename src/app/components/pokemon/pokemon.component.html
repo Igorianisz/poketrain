@@ -1,0 +1,10 @@
+<app-header [paths]="pathsList"></app-header>
+
+<div class="loading" *ngIf="loading">Cargando... espera</div>
+
+<div *ngIf="!loading">
+    <div *ngFor="let pkm of pokemonList, index as i" class="nCard">
+        <app-poke-card [id]='i+1'></app-poke-card>
+
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<app-header [paths]="pathsList"></app-header>
+
+<div class="loading" *ngIf="loading">Cargando... espera</div>
+
+<!-- <input (change)=checkDni($event) id="ad">Valor de la wea -->
+<h1 id="ad">{{dni}} es
+
+    <input [(ngModel)]="dni" (keyup)=checkDni($event)>
+
+</h1>
+<h2 [style.color]="colorStatus">{{dniStatus}}</h2>
+
+<h3>Creación de DNI</h3>
+<input (blur)=crearDni($event) id="ad">
+
+<div *ngIf="statusLista">
+    <div *ngFor="let dni of dniList, index as i">
+        <div>{{dni}}</div>
+    </div>
+</div>
+<!-- <div *ngIf="!loading">
+    <div *ngFor="let item of itemList, index as i" class="nCard">
+        <div>
+            <div>{{item['name']}}
+                <br> {{item['id']}}
+            </div>
+            <img [src]="item['sprites']['default']">
+        </div>
+    </div>
+</div> -->

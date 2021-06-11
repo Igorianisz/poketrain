@@ -1,0 +1,12 @@
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a [routerLink]="['/home']"><img class="logoMH" src="/assets/img/logoPokebola.png"></a>
+            </li>
+            <li *ngFor='let p of paths'>
+                <a [routerLink]="[p.value]">{{p.name}}</a>
+            </li>
+        </ul>
+    </nav>
+</header>
